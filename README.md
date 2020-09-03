@@ -1,2 +1,3 @@
 # FormularioStickers
-Created with CodeSandbox
+Formulário de Stickers com Html, css e Js.
+
