@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Teste Frontend</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="box">
+      <header class="header">
+        <div>
+          <h1 class="title"> Formulário</h1>
+          <h1 class="title"> para compra de <h1>
+          <h1 class="title"><span class="span">Pacote de Stickers</span>
+          </h1>
+        </div>
+
+        <div> 
+            <img src="./imagens/pack.svg" alt="" width="150" height="150">
+        </div>     
+      </header>
+
+      <form class="form">
+
+        <fieldset class="fieldset">
+          <label class="label">Quais stickers ?</label>
+          <div class="boxOptions">     
+            <label class="containerOptions">React
+              <input name="itemCheck" type="checkbox">
+              <span name="checkmark" class="checkmark"></span>
+            </label>
+
+            <label class="containerOptions">Vue
+                <input name="itemCheck" type="checkbox">
+              <span name="checkmark" class="checkmark"></span>
+            </label>
+
+            <label class="containerOptions">Angular
+                <input name="itemCheck" type="checkbox">
+              <span name="checkmark" class="checkmark"></span>
+            </label>
+           </div>
+         </fieldset>
+
+         <fieldset class="fieldset">
+          <label class="label">Quantos stickers de cada?</label>
+          <div class="counter">
+            <svg id="minusCounter" alt="decrementar" xmlns="http://www.w3.org/2000/svg" width="42" height="42">
+              <path
+                d="M4.667 0A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667zm28 23.333H9.333v-4.666h23.334v4.666z"
+              />
+            </svg>
+            <input id="inputCounter" readonly=“true” type="text" value="1" placeholder="0" />
+            <svg id="addCounter" alt="incrementar" xmlns="http://www.w3.org/2000/svg" width="42" height="42">
+              <path
+                d="M4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42zm4.666-23.333h9.334V9.333h4.666v9.334h9.334v4.666h-9.334v9.334h-4.666v-9.334H9.333v-4.666z"
+              />
+            </svg>
+           </div>
+         </fieldset>
+
+        <fieldset class="fieldset">
+          <label class="label">Observações:</label>
+          <textarea
+           class="textarea"
+           name="descricao"
+           placeholder="Alguma dúvida? Recado?"
+          >
+          </textarea>
+        </fieldset>
+
+        <footer class="footer">
+         <label id="messagemConfirmacao" class="confirmMessage"> Formulário enviado com sucesso ! </label>
+         <button class="button" type="button" id="submit">Enviar</button>
+        </footer>
+     </form>
+    </div>
+  </div>
+
+    <script src="functions.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
